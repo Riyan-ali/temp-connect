@@ -1,0 +1,58 @@
+.background {
+    background: rgb(47, 102, 144);
+    background: linear-gradient(90deg, rgba(47, 102, 144, 1) 10%, rgba(58, 124, 165, 1) 35%, rgba(129, 195, 215, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.left {
+    padding: 0 0 0 10rem;
+
+    .rotate {
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5rem;
+        color: $white-color;
+
+        ::selection {
+            background-color: $navy-color;
+            color: $white-color;
+        }
+    }
+
+    .img {
+        width: 12.5rem;
+        height: 8rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            filter: invert(100%);
+        }
+    }
+
+    p {
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        width: 75%;
+        color: $cyan-color;
+
+
+        &::selection {
+            background-color: $navy-color;
+            color: $white-color;
+        }
+    }
+}
+

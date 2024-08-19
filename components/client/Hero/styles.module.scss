@@ -1,0 +1,223 @@
+.container {
+    background-color: #ffffff;
+    width: 75%;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    .submit {
+        display: none;
+    }
+}
+
+.stepper {
+
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem auto 0 auto;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span {
+            font-weight: 600;
+            font-size: .8rem;
+            margin: .2rem 0;
+        }
+    }
+
+    .circle {
+        border: 1px solid $grey-color;
+        color: $grey-color;
+        padding: .5rem 1rem;
+        border-radius: 50%;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    .completed {
+        background-color: $dark-blue-color;
+        color: #ffffff;
+    }
+
+    .active {
+        background-color: $cyan-color;
+        color: #ffffff;
+    }
+}
+
+.bottom {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-weight: bold;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem .75rem;
+        border-radius: .5rem;
+        cursor: pointer;
+    }
+
+    .back {
+
+        // background-color: rgba(173, 181, 189, 0.15);
+        background-color: transparent;
+        transition: .25s ease-in;
+
+        svg {
+            margin: 0 .5rem 0 .25rem;
+            transition: .25s ease-out;
+        }
+
+        &:hover {
+
+            background-color: rgba(173, 181, 189, 0.15);
+
+            svg {
+                margin: 0 .5rem 0 0;
+            }
+        }
+    }
+
+    .next {
+        background-color: rgba(129, 195, 215, 0.25);
+        transition: .25s ease-in;
+
+        svg {
+            margin: 0 .25rem 0 .5rem;
+            transition: .25s ease-out;
+        }
+
+        &:hover {
+
+            background-color: rgba(129, 195, 215, 0.7);
+
+            svg {
+                margin: 0 0 0 .5rem;
+            }
+        }
+    }
+}
+
+.input {
+    margin: .5rem 0;
+
+    div {
+        display: flex;
+        align-items: center;
+
+        label {
+            font-size: 1.2rem;
+            margin: 0 .25rem 0 0;
+            width: max-content;
+            color: $navy-color;
+            font-weight: 600;
+        }
+
+        input {
+            flex: 1;
+            width: 100%;
+            padding: .25rem;
+            border-radius: .25rem;
+        }
+    }
+
+    .errortext {
+        display: flex;
+        justify-content: right;
+        font-size: .9rem;
+        color: $error-color;
+    }
+}
+
+.error {
+    div {
+        input {
+            color: $error-color;
+        }
+    }
+
+}
+
+.radio {
+
+    margin: 1rem 0 0 0;
+
+    .mainlabel {
+        font-size: 1.2rem;
+        margin: 0 .5rem 0 0;
+        width: max-content;
+        color: $navy-color;
+        font-weight: 600;
+    }
+
+    label {
+        font-size: 1.1rem;
+        margin: 0 .5rem;
+    }
+
+    input {
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
+.create {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.configure {
+    width: 75%;
+    margin: 2rem auto;
+}
+
+.start {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    // background-color: yellow;
+
+    span {
+        padding: .5rem 4rem;
+        border: 4px dashed $cyan-color;
+    }
+
+    button {
+        padding: .25rem .5rem;
+        background-color: $cyan-color;
+        color: #ffffff;
+        font-weight: 600;
+        margin: .5rem;
+        border-radius: .35rem;
+        cursor: pointer;
+        transition: .2s ease-in;
+
+        &:hover {
+            background-color: $blue-color;
+        }
+    }
+}
+
+.finalerror {
+    width: 75%;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: right;
+
+    span {
+        font-size: .9rem;
+        color: $error-color;
+    }
+}
